@@ -40,7 +40,8 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+    /*...(config.dev.useEslint ? [] : []),[]中的内容去掉可以忽略掉对文件的语法校验，因为在命令行安装时装入了校验的插件*/
+      ...(config.dev.useEslint ? [] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',

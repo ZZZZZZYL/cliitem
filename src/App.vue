@@ -1,6 +1,9 @@
+<!--该组件是一个局部组件，因为要在main.js中要注册该子组件-->
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+  <!--router-view为当前路由下显示的内容，App.vue在main.js中引入，
+    当前的路由指的是同样在main.js中引入的router/index.js中的router路由，
+    根路径下显示的是HelloWorld.vue,所以显示的是HelloWord.vue中的内容-->
     <router-view/>
   </div>
 </template>
@@ -12,12 +15,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ 
 </style>
