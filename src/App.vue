@@ -5,7 +5,7 @@
     当前的路由指的是同样在main.js中引入的router/index.js中的router路由，
     根路径下显示的是HelloWorld.vue,所以显示的是HelloWord.vue中的内容-->
     <router-view/>
-  </div>
+   </div>
 </template>
 
 <script>
@@ -14,6 +14,5 @@ export default {
 }
 </script>
 
-<style>
- 
-</style>
+<style></style>
+

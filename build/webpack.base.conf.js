@@ -36,11 +36,16 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'assets' : resolve('src/assets')
     }
   },
   module: {
     rules: [
+<<<<<<< HEAD
     /*...(config.dev.useEslint ? [] : []),[]中的内容去掉可以忽略掉对文件的语法校验，因为在命令行安装时装入了校验的插件*/
+=======
+    //将 ...(config.dev.useEslint ? [] : []),第一个括号内的内容去掉可以忽略掉语法校验
+>>>>>>> origin/20180802-index-zyl
       ...(config.dev.useEslint ? [] : []),
       {
         test: /\.vue$/,
